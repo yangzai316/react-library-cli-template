@@ -1,13 +1,13 @@
 ### example
 #### 使用方法
 ```
-# 开启打包
-npm run start
+# 开启本地服务 & 打开浏览器 3000 端口
+npm run dev
 
 ```
 
 #### 作用
-组件开发环境，实现开发环境实时打包，并自动添加到 example的 node_modules中
+测试组件在 react工程的使用情况
 
 #### 搭建过程
 ```
@@ -33,9 +33,14 @@ npm install -D @babel/core @babel/plugin-transform-runtime @babel/preset-env bab
         ]
     }
 
+# 配置本地开发服务
+npm install -D webpack-dev-server
+
+# 配置 react工程的 html模块
+npm install -D html-webpack-plugin
+
 # 支持 css\less
 npm i -D css-loader style-loader less-loader less
 
-# 
 
 ```

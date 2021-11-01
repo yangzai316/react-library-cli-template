@@ -1,4 +1,5 @@
-const path = require('path')
+const path = require('path');
+const NeatenTransferWebpackPlugin = require('neaten-transfer-webpack-plugin')
 
 module.exports = {
     mode: 'production',
@@ -19,6 +20,20 @@ module.exports = {
             ],
         },]
     },
+    plugins: [new NeatenTransferWebpackPlugin({
+        from: [{
+            path: path.resolve(__dirname, './'),
+            name: 'dist'
+        }, {
+            path: path.resolve(__dirname, './'),
+            name: 'package.json'
+        }],
+        to: {
+            path: path.resolve(__dirname, './example/'),
+            name: 'hello',
+            cover: true
+        }
+    })],
     output: {
         path: path.resolve(__dirname, './dist'),
         filename: 'bundle.js',

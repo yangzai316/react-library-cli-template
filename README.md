@@ -1,41 +1,16 @@
-### example
-#### 使用方法
+#### 开始
+
 ```
-# 开启打包
+# 安装 react 组件开发的依赖包，可自行根据需求配置 webpack
+npm i
+
+# 开始组件打包
 npm run start
 
-```
+# 组件被 example引用，并实时自动进行被引用的处理，开启example在浏览器展示效果
+cd example
+npm run dev
 
-#### 作用
-组件开发环境，实现开发环境实时打包，并自动添加到 example的 node_modules中
-
-#### 搭建过程
-```
-# 初始化 package
-
-npm init -y
-
-# 初始化 react项目依赖
-
-npm install -S react react-dom
-
-# babel 配置 (注意版本，各个依赖版本不匹配，无法正常运行)
-npm install -D @babel/core @babel/plugin-transform-runtime @babel/preset-env babel-loader @babel/preset-react
-
-# 配置 .babelrc.json
-    {
-        "presets": [
-            "@babel/preset-env",
-            "@babel/react"
-        ],
-        "plugins": [
-            "@babel/plugin-transform-runtime"
-        ]
-    }
-
-# 支持 css\less
-npm i -D css-loader style-loader less-loader less
-
-# 
+可在浏览器 localhost:3000 查看组件开发实时效果
 
 ```

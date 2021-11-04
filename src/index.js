@@ -1,10 +1,9 @@
 import React from 'react';
-
-// import './app.less'
+import './index.less';
 
 const Hello = () => {
     return (
-        <div>hello456</div>
+        <div>hello</div>
     )
 };
 

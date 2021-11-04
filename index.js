@@ -1,4 +1,4 @@
-import Hello from './src/index';
 
+import Hello from './src/index';
 
 export default Hello;

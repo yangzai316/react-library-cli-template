@@ -1,17 +1,18 @@
 {
   "name": "example",
   "version": "1.0.0",
-  "description": "",
+  "description": "this is example project for new component",
   "main": "index.js",
   "scripts": {
     "dev": "webpack serve --open"
   },
   "keywords": [],
-  "author": "cunyang",
-  "license": "ISC",
+  "author": "",
+  "license": "",
   "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react": "file:../node_modules/react",
+    "react-dom": "file:../node_modules/react-dom",
+    "hello": "file:.."
   },
   "devDependencies": {
     "@babel/core": "^7.15.8",

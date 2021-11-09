@@ -9,6 +9,7 @@ npm run start
 
 # 组件被 example 自动引用，并实时热应用正在开发的组件，开启example在浏览器展示效果
 cd example
+npm i 
 npm run dev
 
 可在浏览器 localhost:3000 查看组件开发实时效果
